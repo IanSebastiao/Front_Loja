@@ -144,7 +144,7 @@ class ApiService {
 
   Future<void> register(Cliente cliente, String password) async {
     final response = await http.post(
-      Uri.parse('$baseUrl/registrar/'),
+      Uri.parse('$baseUrl/register/'),
       headers: {
         'Content-Type': 'application/json',
       },
